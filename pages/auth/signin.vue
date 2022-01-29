@@ -2,7 +2,7 @@
   <v-row align="center" justify="center">
     <v-col cols="12" sm="8" md="4" align="center">
       <v-card class="elevation-4 text-left">
-        <v-card-title class="fancy-title align-center justify-center">Trello Clone</v-card-title>
+        <v-card-title class="fancy-title align-center justify-center">Kanban Clone</v-card-title>
           <v-card-text>
             <v-form>
               <v-text-field
@@ -60,6 +60,7 @@ export default {
   methods: {
     login(){
       let that = this
+      // firebase methods for auth
       this.$fire.auth.signInWithEmailAndPassword(this.auth.email, this.auth.password)
       .catch(function (error){
         that.snackbarText = error.message
@@ -72,7 +73,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

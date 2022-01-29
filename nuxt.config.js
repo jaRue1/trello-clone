@@ -27,6 +27,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/styles.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -44,6 +45,32 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyAln41WGUAsaJhSMK-hdA5__CILUwOqZco",
+          authDomain: "kanban-clone-jj.firebaseapp.com",
+          projectId: "kanban-clone-jj",
+          storageBucket: "kanban-clone-jj.appspot.com",
+          messagingSenderId: "601412532475",
+          appId: "1:601412532475:web:298f8c8f5242fc7a3b585e",
+        },
+        services: {
+          auth: {
+            persistence: 'local', // default
+            initialize: {
+              onAuthStateChangedAction: 'onAuthStateChangedAction',
+              subscribeManually: false
+            },
+            ssr: false, // default
+          },
+          firestore: true,
+          storage: true,
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
