@@ -20,7 +20,7 @@
 #### login
   ![login](./assets/pics/login.png)
 #### Hompage
-  ![login](./assets/pics/hompage2.png)
+  ![login](./assets/pics/homepage.png)
 #### Add Boards
   ![addBoards](./assets/pics/addBoards.png)
 #### Add Color to Boards
