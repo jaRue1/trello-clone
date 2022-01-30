@@ -33,3 +33,12 @@
   ![editCard](./assets/pics/EditCard.png)
 #### Nav
 ![nav](./assets/pics/nav.png)
+
+# Live Deployment 
+
+  [Kanban-Clone](https://kanban-clone-jj.web.app/)
+  ## Test User Credentials
+  
+  Email: test4@gmail.com
+
+  Password: password1
