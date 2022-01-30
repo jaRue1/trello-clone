@@ -243,6 +243,7 @@ export default {
       } catch (error) {}
     },
     uploadFiles() {
+      //
       const itemFilename =
         this.fileToUpload.uuid + '-' + this.fileToUpload.file.name
       const itemName =
